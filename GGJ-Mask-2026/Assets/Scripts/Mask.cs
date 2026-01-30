@@ -1,19 +1,41 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Mask : Controllable
+public class Mask : Pawn
 {
-    private void Start()
+    public override void GainControl(Pawn targetPawn)
     {
-        GainControl();
+        base.GainControl(targetPawn);
+
+        gameObject.SetActive(true);
+    }
+
+    public override void LooseControl()
+    {
+        base.LooseControl();
+
+        gameObject.SetActive(false);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.TryGetComponent(out Controllable animal))
+        if (!isControlled)
+            return;
+
+        if (collision.gameObject.TryGetComponent(out Pawn animal))
         {
             LooseControl();
 
             animal.GainControl();
         }
+        else
+            Die();
+    }
+
+    
+
+    public void Die()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
