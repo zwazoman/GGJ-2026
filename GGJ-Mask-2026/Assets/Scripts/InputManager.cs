@@ -1,3 +1,4 @@
+using System;
 using System.Xml.Linq;
 using UnityEngine;
 using UnityEngine.Events;
@@ -22,8 +23,8 @@ public class InputManager : MonoBehaviour
 
     #endregion
 
-    public UnityEvent<Vector2> OnLeftClick;
-    public UnityEvent<Vector2> OnRightClick;
+    public event Action<Vector2> OnLeftClick;
+    public event Action<Vector2> OnRightClick;
 
     private void Awake()
     {
