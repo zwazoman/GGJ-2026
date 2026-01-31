@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 909726b7a9bc3914c8b09b26f8e15628
+guid: 5ce847efeba2d83428331e2bfd85d833
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8339099604836841949
-    second: S_Abeille_0
+      213: -1048944756317858132
+    second: Sans titre-2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: S_Abeille_0
+      name: Sans titre-2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 294
-        height: 232
+        y: 6
+        width: 1018
+        height: 1018
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd976ec78ee6ab370800000000000000
-      internalID: 8339099604836841949
+      spriteID: ca65aaa3d466171f0800000000000000
+      internalID: -1048944756317858132
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      S_Abeille_0: 8339099604836841949
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
