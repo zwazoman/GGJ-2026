@@ -18,7 +18,6 @@ public class Animal : Pawn
     public override void GainControl(Pawn lastPawn = null)
     {
         base.GainControl(lastPawn);
-
         mask = lastPawn;
     }
 

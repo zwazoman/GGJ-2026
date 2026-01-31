@@ -13,6 +13,7 @@ public class Pawn : MonoBehaviour
     public virtual void GainControl(Pawn lastPawn = null)
     {
         isControlled = true;
+        CameraBehaviour.Target = this;
         print(gameObject.name + " Possessed !");
     }
 
