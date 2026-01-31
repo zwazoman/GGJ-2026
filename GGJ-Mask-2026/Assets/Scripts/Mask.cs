@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class Mask : Pawn
 {
     [Header("references")]
-    [SerializeField] Rigidbody _rb;
+    [SerializeField] Rigidbody2D _rb;
 
     [Header("parameters")]
     [SerializeField] float _launchStrength;
