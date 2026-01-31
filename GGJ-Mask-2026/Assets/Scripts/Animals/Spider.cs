@@ -56,9 +56,10 @@ public class Spider : Animal
             
             Vector2 currentRight = right;
             transform.rotation = Quaternion.AngleAxis(Mathf.Rad2Deg * Mathf.Atan2(hit.normal.y, hit.normal.x)-90, Vector3.forward);
-            orientation = Mathf.Sign(Vector2.Dot(currentRight, right));
+            orientation = Mathf.Sign(Vector2.Dot(currentRight, right)/*-.01f*/);
             transform.position = hit.point + hit.normal*.5f;
             _state = State.Walking;
+            _lineRenderer.enabled = false;
             OnLand?.Invoke();
         }
         else
@@ -114,11 +115,13 @@ public class Spider : Animal
 
     void UpdateGrappleVisuals()
     {
+        _lineRenderer.enabled = true;
+        
         float alpha = (Time.time - _grappleStartTime)/_grappleLaunchDuration;
         float parabola01 = Mathf.Clamp01( (alpha * (1.0f-alpha))*4f);
         for (int i = 0; i < _lineRenderer.positionCount; i++)
         {
-            float pAlpha = (float)i/(float)_lineRenderer.positionCount;
+            float pAlpha = (float)i/((float)_lineRenderer.positionCount-1);
             _lineRenderer.SetPosition(i,
                 transform.position 
                 + transform.up * (_grappleLength * pAlpha) 
@@ -129,7 +132,6 @@ public class Spider : Animal
     
     void UpdateGrapple()
     {
-        _lineRenderer.enabled = true;
         
         float alpha = (Time.time - _grappleStartTime)/_grappleLaunchDuration;
         float parabola01 = (alpha * (1.0f-alpha))*4f;
@@ -143,7 +145,6 @@ public class Spider : Animal
         
         if (hit)
         {
-            _lineRenderer.enabled = false;
             _grapplePoint = hit.point;
             _grappleLength = hit.distance;
             Debug.DrawLine(transform.position, _grapplePoint, Color.red,1);
