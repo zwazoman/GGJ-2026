@@ -13,6 +13,7 @@ public class Pawn : MonoBehaviour
     public virtual void GainControl(Pawn lastPawn = null)
     {
         isControlled = true;
+        print(gameObject.name + " Possessed !");
     }
 
     public virtual void LooseControl()

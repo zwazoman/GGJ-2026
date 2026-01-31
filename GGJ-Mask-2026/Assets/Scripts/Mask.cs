@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,19 +10,26 @@ public class Mask : Pawn
     [Header("parameters")]
     [SerializeField] float _launchStrength;
 
-
     private void Awake()
     {
         TryGetComponent(out _rb);
     }
 
-    public override void GainControl(Pawn targetPawn)
+    private void Update()
     {
-        base.GainControl(targetPawn);
+        //transform.right = _rb.linearVelocity;
+    }
 
+    public override void GainControl(Pawn lastPawn)
+    {
+        base.GainControl(lastPawn);
+
+        Animal animal = lastPawn as Animal;
+
+        transform.position = animal.maskSocket.position;
         gameObject.SetActive(true);
 
-        Launch(Input.mousePosition);
+        Launch(Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position);
     }
 
     public override void LooseControl()
@@ -38,9 +46,7 @@ public class Mask : Pawn
 
         if (collision.gameObject.TryGetComponent(out Pawn animal))
         {
-            LooseControl();
-
-            animal.GainControl();
+            PossessPawn(animal);
         }
         else
             Die();
@@ -48,12 +54,12 @@ public class Mask : Pawn
 
     void Launch(Vector2 direction)
     {
-        Vector2 pos = new Vector2(transform.position.x, transform.position.y);
-        _rb.AddForce((direction - pos).normalized * _launchStrength);
+        _rb.AddForce(direction.normalized * _launchStrength,ForceMode2D.Impulse);
     }
 
     void Die()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameManager.Instance.Restart();
+        print("MEURSSSSSSSSSSSSSSSSSSS");
     }
 }
