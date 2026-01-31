@@ -5,11 +5,11 @@ public class Animal : Pawn
     [SerializeField] public Transform maskSocket;
 
     Pawn mask;
-    Collider2D _coll;
+    protected Collider2D coll;
 
     protected virtual void Awake()
     {
-        TryGetComponent(out _coll);
+        TryGetComponent(out coll);
     }
 
     public override void GainControl(Pawn lastPawn = null)
@@ -32,7 +32,7 @@ public class Animal : Pawn
     {
         base.LooseControl();
 
-        _coll.enabled = false;
+        coll.enabled = false;
         Destroy(gameObject);
     }
 }
