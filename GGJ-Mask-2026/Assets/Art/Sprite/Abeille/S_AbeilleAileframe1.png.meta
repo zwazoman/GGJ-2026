@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 909726b7a9bc3914c8b09b26f8e15628
+guid: fb5d938c934ad1a4888d1bd470b2fc55
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8339099604836841949
-    second: S_Abeille_0
+      213: 6924128946163670661
+    second: S_AbeilleAileframe1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: S_Abeille_0
+      name: S_AbeilleAileframe1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 294
-        height: 232
+        height: 281
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd976ec78ee6ab370800000000000000
-      internalID: 8339099604836841949
+      spriteID: 58ed5174792771060800000000000000
+      internalID: 6924128946163670661
       vertices: []
       indices: 
       edges: []

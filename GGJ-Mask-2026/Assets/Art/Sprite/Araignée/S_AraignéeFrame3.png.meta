@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fc343df302a930f47a909feafe137802
+guid: 5b16f6cfcf97b1e4cb2b0400baf2a26e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8978616260011513223
-    second: S_TaupeFrame1_0
+      213: 5204508829784832103
+    second: "S_Araign\xE9eFrame3_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: S_TaupeFrame1_0
+      name: "S_Araign\xE9eFrame3_0"
       rect:
         serializedVersion: 2
-        x: 118
-        y: 127
-        width: 394
-        height: 264
+        x: 34
+        y: 91
+        width: 417
+        height: 331
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7855880fae37a9c70800000000000000
-      internalID: 8978616260011513223
+      spriteID: 76875bdb4312a3840800000000000000
+      internalID: 5204508829784832103
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "S_Araign\xE9eFrame3_0": 5204508829784832103
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "S_AbeilleEcras\xE9_0": -4680559333855420121
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
