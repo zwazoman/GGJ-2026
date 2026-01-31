@@ -6,10 +6,8 @@ public class Frog : Animal
     Vector2 _velocity;
     Collider2D _collider;
     
-    [Header("Contact Filter")]
-    [SerializeField] private ContactFilter2D _contactFilter;
-    
     [Header("settings")]
+    [SerializeField] private ContactFilter2D _contactFilter;
     [SerializeField] private float _jumpAngle;
     [SerializeField] private float _jumpStrength;
     [SerializeField] private float _jumpStrengthWithInput;
