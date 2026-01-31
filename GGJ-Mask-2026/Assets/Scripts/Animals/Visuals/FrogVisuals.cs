@@ -16,10 +16,15 @@ public class FrogVisuals : MonoBehaviour
         {
             isJumping = true;
             _jumpSprite.gameObject.SetActive(true);
-            _jumpSprite.transform.localScale = new Vector3(Mathf.Sign(_frog.Velocity.x), 1, 1);
+            _jumpSprite.transform.localScale = new Vector3(1, Mathf.Sign(_frog.Velocity.x), 1);
             _IdleSprite.gameObject.SetActive(false);
         };
-
+        
+        _frog.OnBounce += () =>
+        {
+            _jumpSprite.transform.localScale = new Vector3(1, Mathf.Sign(_frog.Velocity.x), 1);
+        };
+        
         _frog.OnLand += () =>
         {
             _IdleSprite.gameObject.SetActive(true);

@@ -24,7 +24,7 @@ public class Spider : Animal
     protected override void Update()
     {
         base.Update();
-        _wantsToGrapple |= Input.GetKeyDown(KeyCode.Mouse0);
+        _wantsToGrapple |= Input.GetKeyDown(KeyCode.Mouse0) && isControlled;
     }
     
     void Swing()

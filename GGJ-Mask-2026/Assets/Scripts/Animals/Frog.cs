@@ -18,6 +18,7 @@ public class Frog : Animal
     
     protected override void Awake()
     {
+        base.Awake();
         TryGetComponent(out _collider);
         print(_collider.name);
     }
@@ -30,12 +31,12 @@ public class Frog : Animal
 
     void Jump()
     {
-        OnJump?.Invoke();
         float angle = _jumpAngle * Mathf.Deg2Rad;
         Velocity = 
             new Vector2(Mathf.Cos(angle) * _orientation, Mathf.Sin(angle))
             * (!Input.GetKey(KeyCode.Mouse0) ? _jumpStrength : _jumpStrengthWithInput); 
         Debug.DrawRay(transform.position, Velocity, Color.red,1);
+        OnJump?.Invoke();
     }
 
     void FixedUpdate()
