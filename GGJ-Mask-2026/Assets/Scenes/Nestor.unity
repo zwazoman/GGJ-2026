@@ -779,6 +779,9 @@ MonoBehaviour:
   isControlled: 0
   maskSocket: {fileID: 2062199817}
   _speed: 10
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!58 &1435853660
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1026,6 +1029,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isControlled: 0
   maskSocket: {fileID: 1572411546}
+  _rb: {fileID: 0}
+  _jumpStrength: 2
+  _torqueStrength: 5
 --- !u!4 &1753257645
 Transform:
   m_ObjectHideFlags: 0
@@ -1055,7 +1061,7 @@ GameObject:
   - component: {fileID: 1958826795}
   - component: {fileID: 1958826794}
   - component: {fileID: 1958826796}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1298,6 +1304,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isControlled: 0
   maskSocket: {fileID: 1569956808}
+  _rb: {fileID: 0}
+  _jumpStrength: 2
+  _torqueStrength: 5
 --- !u!4 &2145773231
 Transform:
   m_ObjectHideFlags: 0
