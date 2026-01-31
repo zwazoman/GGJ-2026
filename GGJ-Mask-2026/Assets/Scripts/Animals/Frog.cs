@@ -25,7 +25,7 @@ public class Frog : Animal
 
     private void Start()
     {
-        Jump();
+        //Jump();
     }
 
     void Jump()
@@ -49,7 +49,7 @@ public class Frog : Animal
         {
             print("collision "+hits[0].transform.name);
             if (Vector2.Dot(hits[0].normal, Vector2.up) > .7f)
-                Jump();
+                if (isControlled) Jump(); else _velocity = Vector2.zero;
             else
                 _velocity = Vector2.Reflect(_velocity, hits[0].normal)*1f;
 
@@ -64,6 +64,7 @@ public class Frog : Animal
     public override void GainControl(Pawn oldPawn)
     {
         base.GainControl(oldPawn);
+        Jump();
     }
 
     public override void LooseControl()
