@@ -74,10 +74,11 @@ public class Spider : Animal
         Debug.DrawRay(transform.position + right*.6f, - transform.up*.6f, Color.blue);
         
         //checkFor wall
-        Debug.DrawRay(transform.position + right*.6f, - transform.up*.6f, Color.green);
-        hit = Physics2D.Raycast(transform.position + (transform.up)*.5f, right, .6f, _layerMask);
+        Debug.DrawRay(transform.position, right*.6f, Color.green);
+        hit = Physics2D.Raycast(transform.position , right, .6f, _layerMask);
         if (hit) //un mur devant
         {
+            print("wall");
             transform.position = hit.point + hit.normal*.5f;
             transform.rotation = Quaternion.AngleAxis(Mathf.Rad2Deg * Mathf.Atan2(hit.normal.y, hit.normal.x)-90, Vector3.forward);
         }
@@ -114,7 +115,7 @@ public class Spider : Animal
     }
 }
 
-
+#if UNITY_EDITOR
 [CustomEditor(typeof(Spider))]
 class SpiderEditor : Editor
 {
@@ -124,5 +125,5 @@ class SpiderEditor : Editor
         GUILayout.Label("is grappling : " + ((Spider)target)._isGrappling);
     }
 }
-
+#endif
 

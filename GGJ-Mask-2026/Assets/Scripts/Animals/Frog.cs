@@ -13,7 +13,7 @@ public class Frog : Animal
     [SerializeField] private float _jumpStrengthWithInput;
     [SerializeField] private float _gravity;
 
-    private int _orientation = 1;
+    [SerializeField] private int _orientation = 1;
 
     protected override void Awake()
     {
