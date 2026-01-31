@@ -12,8 +12,10 @@ public class BeeVisuals : AnimalVisual
         _bee = _animal as Bee;
     }
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
+
         _bee.OnFly += Fly;
     }
 

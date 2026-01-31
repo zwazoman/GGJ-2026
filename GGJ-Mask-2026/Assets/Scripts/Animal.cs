@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class Animal : Pawn
 {
-    public event Action OnGainControl, OnLooseControl;
-
     [SerializeField] public Transform maskSocket;
 
     protected Pawn mask;
@@ -23,7 +21,7 @@ public class Animal : Pawn
 
     protected virtual void Update()
     {
-        if ((isControlled))
+        if (isControlled)
         {
             if(Input.GetKeyDown(KeyCode.Mouse1))
                 PossessPawn(mask);
