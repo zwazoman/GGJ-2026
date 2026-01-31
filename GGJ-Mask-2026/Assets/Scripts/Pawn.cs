@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Pawn : MonoBehaviour
 {
-    public bool isControlled = false;
+    [HideInInspector] public bool isControlled = false;
 
     public void PossessPawn(Pawn targetPawn)
     {
