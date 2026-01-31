@@ -1,3 +1,4 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 
@@ -8,7 +9,10 @@ public class Spider : Animal
     [SerializeField] private float _walkSpeed;
     [SerializeField] private float _swingSpeed;
 
-    private float _orientation = 1;
+
+    public event Action OnSwingStart, OnLand;
+
+    public float orientation { get; set; } = 1;
     
     //states
     public bool _isGrappling { get; private set; } = false; 
@@ -19,7 +23,7 @@ public class Spider : Animal
 
     private bool _wantsToGrapple;
     
-    private Vector3 right => _orientation * transform.right;
+    private Vector3 right => orientation * transform.right;
 
     protected override void Update()
     {
@@ -39,14 +43,15 @@ public class Spider : Animal
             
             Vector2 currentRight = right;
             transform.rotation = Quaternion.AngleAxis(Mathf.Rad2Deg * Mathf.Atan2(hit.normal.y, hit.normal.x)-90, Vector3.forward);
-            _orientation = Mathf.Sign(Vector2.Dot(currentRight, right));
+            orientation = Mathf.Sign(Vector2.Dot(currentRight, right));
             transform.position = hit.point + hit.normal*.5f;
             _isGrappling = false;
+            OnLand?.Invoke();
         }
         else
         {
             //rotate around point
-            transform.RotateAround(_grapplePoint, Vector3.forward, _orientation * _swingSpeed * Time.deltaTime / _grappleLength);
+            transform.RotateAround(_grapplePoint, Vector3.forward, orientation * _swingSpeed * Time.deltaTime / _grappleLength);
         }
     } 
     
@@ -66,6 +71,7 @@ public class Spider : Animal
                 _grappleLength = hit.distance;
                 Debug.DrawLine(transform.position, _grapplePoint, Color.red,1);
                 _isGrappling = true;
+                OnSwingStart?.Invoke();
             }
         }
         
