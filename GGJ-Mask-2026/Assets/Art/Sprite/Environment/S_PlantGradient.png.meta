@@ -634,7 +634,28 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      S_PlantGradient_0: 5434377429295339501
+      S_PlantGradient_1: -5474921509986869464
+      S_PlantGradient_10: -5499338243757005569
+      S_PlantGradient_11: 4622418109047824671
+      S_PlantGradient_12: 5907203791935475625
+      S_PlantGradient_13: -5919810546368552740
+      S_PlantGradient_14: 1324612054788646020
+      S_PlantGradient_15: 7445169148425752958
+      S_PlantGradient_16: -8263091855927441502
+      S_PlantGradient_17: -6887083027156475300
+      S_PlantGradient_18: -4952914553227625180
+      S_PlantGradient_19: -5732420488520746266
+      S_PlantGradient_2: 1155430656527146043
+      S_PlantGradient_20: -2154430984904204780
+      S_PlantGradient_3: 2266398646605061611
+      S_PlantGradient_4: -7750472795535372814
+      S_PlantGradient_5: -1047061134508905594
+      S_PlantGradient_6: -5938356143984502669
+      S_PlantGradient_7: -739206918561717160
+      S_PlantGradient_8: -6661260210720697544
+      S_PlantGradient_9: 5743364883925037795
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
