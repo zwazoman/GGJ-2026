@@ -4,7 +4,7 @@ public class Animal : Pawn
 {
     [SerializeField] public Transform maskSocket;
 
-    Pawn mask;
+    protected Pawn mask;
     protected Collider2D coll;
 
     protected virtual void Awake()

@@ -1,7 +1,10 @@
+using System;
 using UnityEngine;
 
 public class Fish : Animal
 {
+    public event Action OnJump, OnHitGround;
+
     [SerializeField] Rigidbody2D _rb;
     [SerializeField] LayerMask _layerMask;
 

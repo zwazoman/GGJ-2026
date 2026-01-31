@@ -1,8 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.WSA;
 
 public class Bee : Animal
 {
+    public event Action OnFly, OnCollide;
+
     Rigidbody2D _rb;
     [SerializeField] float _speed;
     [SerializeField] LayerMask _layerMask;
