@@ -1,7 +1,10 @@
+using System;
 using UnityEngine;
 
 public class Animal : Pawn
 {
+    public event Action OnGainControl, OnLooseControl;
+
     [SerializeField] public Transform maskSocket;
 
     protected Pawn mask;
