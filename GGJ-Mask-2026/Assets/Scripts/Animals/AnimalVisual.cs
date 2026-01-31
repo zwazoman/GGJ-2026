@@ -9,11 +9,19 @@ public class AnimalVisual : MonoBehaviour
     protected virtual void Start()
     {
         _animal.OnGainControl += EquipMask;
+        _animal.OnLooseControl += UnEquipMask;
     }
 
     void EquipMask()
     {
-        _maskVisual.SetActive(true);
+        if(_maskVisual != null)
+            _maskVisual.SetActive(true);
+    }
+
+    void UnEquipMask()
+    {
+        if (_maskVisual != null)
+            _maskVisual.SetActive(false);
     }
 
     void Die()

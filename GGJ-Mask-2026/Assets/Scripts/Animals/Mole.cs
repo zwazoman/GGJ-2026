@@ -12,13 +12,18 @@ public class Mole : Animal
     [SerializeField] float _speed = 10;
 
     bool _moves = false;
+    bool _input;
 
     protected override void Update()
     {
-        if (!isControlled)
-            return;
+        base.Update();
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !_moves)
+        _input |= Input.GetKeyDown(KeyCode.Mouse0) && isControlled;
+    }
+
+    private void FixedUpdate()
+    {
+        if (_input && !_moves)
         {
             float dot = Vector2.Dot((Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized, -transform.right);
 
@@ -47,6 +52,7 @@ public class Mole : Animal
             transform.rotation = Quaternion.AngleAxis(Mathf.Rad2Deg * Mathf.Atan2(hit.normal.y, hit.normal.x) + 180, transform.forward);
             _moves = false;
             OnReach?.Invoke();
+            _input = false;
         }
         else if (collider.gameObject.layer == 6)
         {
