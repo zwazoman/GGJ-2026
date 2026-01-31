@@ -5,16 +5,18 @@ public class Bee : Animal
 {
     Rigidbody2D _rb;
     [SerializeField] float _speed;
+    [SerializeField] LayerMask _layerMask;
 
     bool _move = false;
     Vector2 direction = Vector2.zero;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         TryGetComponent(out _rb);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (isControlled)
         {
@@ -24,12 +26,15 @@ public class Bee : Animal
                 _move = true;
             }
             if (_move)
+            {
                 transform.Translate(direction * _speed * Time.deltaTime);
-
+                if (Physics2D.OverlapCircle(transform.position,.5f,_layerMask))
+                    Die();
+            }
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void Die()
     {
         GameManager.Instance.Restart();
     }

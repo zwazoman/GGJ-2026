@@ -7,7 +7,7 @@ public class Animal : Pawn
     Pawn mask;
     Collider2D _coll;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         TryGetComponent(out _coll);
     }
@@ -19,7 +19,7 @@ public class Animal : Pawn
         mask = lastPawn;
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if ((isControlled))
         {
