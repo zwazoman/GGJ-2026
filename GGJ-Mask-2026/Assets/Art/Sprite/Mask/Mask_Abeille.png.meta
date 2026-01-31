@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 202c3e85fd798434e82ec5261373bc10
+guid: b9e0b792f0d8fdc4aa9a02fb9cb4c373
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5197570979066956258
-    second: S_PoissonFrame2_0
+      213: 5789693638273170898
+    second: Mask_Abeille_0
+  - first:
+      213: -271291115757901027
+    second: Mask_Abeille_1
+  - first:
+      213: -8073000916411888262
+    second: Mask_Abeille_2
+  - first:
+      213: -2147248159854629380
+    second: Mask_Abeille_3
+  - first:
+      213: 7831940159669187021
+    second: Mask_Abeille_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: S_PoissonFrame2_0
+      name: Mask_Abeille_0
       rect:
         serializedVersion: 2
-        x: 60
-        y: 149
-        width: 410
-        height: 204
+        x: 6
+        y: 364
+        width: 84
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e94a2e744b712840800000000000000
-      internalID: 5197570979066956258
+      spriteID: 2dd7c9b50bf195050800000000000000
+      internalID: 5789693638273170898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_Abeille_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 260
+        width: 91
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1be786ea2e2c3cf0800000000000000
+      internalID: -271291115757901027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_Abeille_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 189
+        width: 98
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7dcdd96070f6ff80800000000000000
+      internalID: -8073000916411888262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_Abeille_3
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 47
+        width: 97
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfde04bdc217332e0800000000000000
+      internalID: -2147248159854629380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_Abeille_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 54
+        width: 95
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1b23f6414a0bc60800000000000000
+      internalID: 7831940159669187021
       vertices: []
       indices: 
       edges: []
