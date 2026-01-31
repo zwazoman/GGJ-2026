@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 public class Fish : Animal
@@ -13,6 +14,7 @@ public class Fish : Animal
     [SerializeField] float _groundedHeight = 1;
 
     bool _isGrounded = true;
+    bool _input;
 
     protected override void Awake()
     {
@@ -25,19 +27,22 @@ public class Fish : Animal
     {
         base.Update();
 
-        if (!isControlled)
-            return;
-
         if (Physics2D.Raycast(transform.position, Vector2.down, _groundedHeight, _layerMask))
             _isGrounded = true;
         else
             _isGrounded = false;
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && _isGrounded)
+        _input |= Input.GetKeyDown(KeyCode.Mouse0) && isControlled;
+    }
+
+    private void FixedUpdate()
+    {
+        if (_input && _isGrounded)
         {
             print("frétille");
             _rb.AddForce(transform.up * _jumpStrength, ForceMode2D.Impulse);
             _rb.AddTorque(_torqueStrength, ForceMode2D.Impulse);
+            _input = false;
         }
     }
 
