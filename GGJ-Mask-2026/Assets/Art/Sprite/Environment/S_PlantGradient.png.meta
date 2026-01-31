@@ -1,0 +1,642 @@
+fileFormatVersion: 2
+guid: 2d9c1498ab28b8e46b31794f88a2be20
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5434377429295339501
+    second: S_PlantGradient_0
+  - first:
+      213: -5474921509986869464
+    second: S_PlantGradient_1
+  - first:
+      213: 1155430656527146043
+    second: S_PlantGradient_2
+  - first:
+      213: 2266398646605061611
+    second: S_PlantGradient_3
+  - first:
+      213: -7750472795535372814
+    second: S_PlantGradient_4
+  - first:
+      213: -1047061134508905594
+    second: S_PlantGradient_5
+  - first:
+      213: -5938356143984502669
+    second: S_PlantGradient_6
+  - first:
+      213: -739206918561717160
+    second: S_PlantGradient_7
+  - first:
+      213: -6661260210720697544
+    second: S_PlantGradient_8
+  - first:
+      213: 5743364883925037795
+    second: S_PlantGradient_9
+  - first:
+      213: -5499338243757005569
+    second: S_PlantGradient_10
+  - first:
+      213: 4622418109047824671
+    second: S_PlantGradient_11
+  - first:
+      213: 5907203791935475625
+    second: S_PlantGradient_12
+  - first:
+      213: -5919810546368552740
+    second: S_PlantGradient_13
+  - first:
+      213: 1324612054788646020
+    second: S_PlantGradient_14
+  - first:
+      213: 7445169148425752958
+    second: S_PlantGradient_15
+  - first:
+      213: -8263091855927441502
+    second: S_PlantGradient_16
+  - first:
+      213: -6887083027156475300
+    second: S_PlantGradient_17
+  - first:
+      213: -4952914553227625180
+    second: S_PlantGradient_18
+  - first:
+      213: -5732420488520746266
+    second: S_PlantGradient_19
+  - first:
+      213: -2154430984904204780
+    second: S_PlantGradient_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: S_PlantGradient_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 626
+        width: 198
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de79c88ba79ca6b40800000000000000
+      internalID: 5434377429295339501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_1
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 633
+        width: 120
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f5610e4eb2504b0800000000000000
+      internalID: -5474921509986869464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_2
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 631
+        width: 117
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c95e47f0ae80010800000000000000
+      internalID: 1155430656527146043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_3
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 621
+        width: 211
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed125aaf8dd37f10800000000000000
+      internalID: 2266398646605061611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_4
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 517
+        width: 99
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd09c46e0ac07490800000000000000
+      internalID: -7750472795535372814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_5
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 497
+        width: 95
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68baa7b12771871f0800000000000000
+      internalID: -1047061134508905594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_6
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 509
+        width: 128
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3789b00cc88b69da0800000000000000
+      internalID: -5938356143984502669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_7
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 517
+        width: 80
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8542e9b593fcdb5f0800000000000000
+      internalID: -739206918561717160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_8
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 397
+        width: 126
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8339c8791237e83a0800000000000000
+      internalID: -6661260210720697544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_9
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 382
+        width: 126
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2fdc9aee784bf40800000000000000
+      internalID: 5743364883925037795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_10
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 370
+        width: 137
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4a429010d6ea3b0800000000000000
+      internalID: -5499338243757005569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_11
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 378
+        width: 143
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11e02197c0262040800000000000000
+      internalID: 4622418109047824671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_12
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 261
+        width: 149
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af87221d8a9af150800000000000000
+      internalID: 5907203791935475625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_13
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 250
+        width: 118
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0671e2cab98dda0800000000000000
+      internalID: -5919810546368552740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_14
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 242
+        width: 212
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484a0ee45a7f16210800000000000000
+      internalID: 1324612054788646020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_15
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 250
+        width: 71
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e715d90f4ed825760800000000000000
+      internalID: 7445169148425752958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_16
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 125
+        width: 82
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7850d9cb9935d80800000000000000
+      internalID: -8263091855927441502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_17
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 126
+        width: 175
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5267b3e97a2c60a0800000000000000
+      internalID: -6887083027156475300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_18
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 108
+        width: 105
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d310c9476b34bb0800000000000000
+      internalID: -4952914553227625180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_19
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 122
+        width: 87
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eabc86ffe95270b0800000000000000
+      internalID: -5732420488520746266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_PlantGradient_20
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 123
+        width: 99
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e90b31f6ce912e0800000000000000
+      internalID: -2154430984904204780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
