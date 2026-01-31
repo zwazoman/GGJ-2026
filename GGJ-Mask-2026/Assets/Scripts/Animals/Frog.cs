@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Frog : Animal
 {
-    Vector2 _velocity;
+    public Vector2 Velocity { get;private set; }
     Collider2D _collider;
     
     [Header("settings")]
@@ -14,7 +14,8 @@ public class Frog : Animal
     [SerializeField] private float _gravity;
 
     [SerializeField] private int _orientation = 1;
-
+    public event Action OnJump, OnLand;
+    
     protected override void Awake()
     {
         TryGetComponent(out _collider);
@@ -24,38 +25,40 @@ public class Frog : Animal
     private void Start()
     {
         //Jump();
+        OnLand?.Invoke();
     }
 
     void Jump()
     {
+        OnJump?.Invoke();
         float angle = _jumpAngle * Mathf.Deg2Rad;
-        _velocity = 
+        Velocity = 
             new Vector2(Mathf.Cos(angle) * _orientation, Mathf.Sin(angle))
             * (!Input.GetKey(KeyCode.Mouse0) ? _jumpStrength : _jumpStrengthWithInput); 
-        Debug.DrawRay(transform.position, _velocity, Color.red,1);
+        Debug.DrawRay(transform.position, Velocity, Color.red,1);
     }
 
     void FixedUpdate()
     {
         //gravity
-        _velocity.y = _velocity.y - _gravity * Time.fixedDeltaTime;
+        Velocity = new Vector2(Velocity.x, Velocity.y - _gravity * Time.fixedDeltaTime);
         
         //collision
         int collisionCount = 0;
         RaycastHit2D[] hits = new RaycastHit2D[1];
-        while ( Physics2D.CircleCast(transform.position,.5f,_velocity,_contactFilter,hits,_velocity.magnitude*Time.deltaTime)>0 && collisionCount < 5 )
+        while ( Physics2D.CircleCast(transform.position,.5f,Velocity,_contactFilter,hits,Velocity.magnitude*Time.deltaTime)>0 && collisionCount < 5 )
         {
             if (Vector2.Dot(hits[0].normal, Vector2.up) > .7f)
-                if (isControlled) Jump(); else _velocity = Vector2.zero;
+                if (isControlled) Jump(); else {Velocity = Vector2.zero; OnLand?.Invoke();}
             else
-                _velocity = Vector2.Reflect(_velocity, hits[0].normal)*1f;
+                Velocity = Vector2.Reflect(Velocity, hits[0].normal)*1f;
 
-            _orientation = _velocity.x > 0 ? 1 : -1;
+            _orientation = Velocity.x > 0 ? 1 : -1;
             collisionCount ++;
         }
         
         //apply velocity
-        transform.position += (Vector3)(_velocity * Time.fixedDeltaTime);
+        transform.position += (Vector3)(Velocity * Time.fixedDeltaTime);
     }
     
     public override void GainControl(Pawn oldPawn)
