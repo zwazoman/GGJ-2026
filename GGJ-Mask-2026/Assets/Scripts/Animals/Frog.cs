@@ -39,9 +39,10 @@ public class Frog : Animal
         //apply velocity
         transform.position += (Vector3)(_velocity * Time.fixedDeltaTime);
     }
-    public override void GainControl()
+    
+    public override void GainControl(Pawn oldPawn)
     {
-        base.GainControl();
+        base.GainControl(oldPawn);
     }
 
     public override void LooseControl()
