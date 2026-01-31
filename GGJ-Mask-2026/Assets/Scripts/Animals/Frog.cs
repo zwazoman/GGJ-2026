@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Frog : Controllable
+public class Frog : Animal
 {
     Vector2 _velocity;
     Collider2D _collider;
@@ -14,7 +14,7 @@ public class Frog : Controllable
     [SerializeField] private float _jumpStrengthWithInput;
 
     private int _orientation = 1;
-
+    
     void Jump()
     {
         _velocity = 
@@ -24,8 +24,17 @@ public class Frog : Controllable
 
     void FixedUpdate()
     {
+        int collisionCount = 0;
         RaycastHit2D[] hits = new RaycastHit2D[2];
-        if(_collider.Cast(_velocity,_contactFilter,hits))
+        while (_collider.Cast(_velocity, _contactFilter, hits) > 0 && collisionCount < 5)
+        {
+            if (Vector2.Dot(hits[0].normal, Vector2.up) > .7f)
+                Jump();
+            else
+                _velocity = Vector2.Reflect(_velocity, hits[0].normal)*1.1f;
+            
+            collisionCount ++;
+        }
         
         //apply velocity
         transform.position += (Vector3)(_velocity * Time.fixedDeltaTime);
