@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      S_AbeilleAileframe1_0: 6924128946163670661
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
