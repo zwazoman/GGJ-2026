@@ -15,7 +15,7 @@ public class Frog : Animal
 
     private int _orientation = 1;
 
-    void Awake()
+    protected override void Awake()
     {
         TryGetComponent(out _collider);
         print(_collider.name);
