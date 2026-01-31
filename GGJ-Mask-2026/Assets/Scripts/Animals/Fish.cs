@@ -6,6 +6,7 @@ public class Fish : Animal
 
     [SerializeField] float _jumpStrength = 2;
 
+
     protected override void Awake()
     {
         base.Awake();
