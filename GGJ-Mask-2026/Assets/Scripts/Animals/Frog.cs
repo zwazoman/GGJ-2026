@@ -45,7 +45,6 @@ public class Frog : Animal
         RaycastHit2D[] hits = new RaycastHit2D[1];
         while ( Physics2D.CircleCast(transform.position,.5f,_velocity,_contactFilter,hits,_velocity.magnitude*Time.deltaTime)>0 && collisionCount < 5 )
         {
-            print("collision "+hits[0].transform.name);
             if (Vector2.Dot(hits[0].normal, Vector2.up) > .7f)
                 if (isControlled) Jump(); else _velocity = Vector2.zero;
             else
