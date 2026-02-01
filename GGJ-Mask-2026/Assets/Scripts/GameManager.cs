@@ -1,4 +1,5 @@
 using System.Xml.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -51,6 +52,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+
+
         _firstPawn.GainControl(_mask);
     }
 

@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 1f502d2f51d990a42861dadb95afcffe
+guid: 1f388026e1181a2439a37c06738ed019
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2557933887284137341
-    second: S_Bulle_0
+      213: -2981288762993070640
+    second: Assets - Etoile, souris, explosion_0
   - first:
-      213: -702804011955734794
-    second: S_Bulle_1
+      213: 1540099005397415924
+    second: Assets - Etoile, souris, explosion_1
   - first:
-      213: 1527168775220387962
-    second: S_Bulle_2
+      213: -2096694894965472073
+    second: Assets - Etoile, souris, explosion_2
   - first:
-      213: 1659274653167534082
-    second: S_Bulle_3
+      213: -1974928690941808584
+    second: Assets - Etoile, souris, explosion_3
+  - first:
+      213: 7882103276928957815
+    second: Assets - Etoile, souris, explosion_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,43 +108,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: S_Bulle_0
+      name: Assets - Etoile, souris, explosion_0
       rect:
         serializedVersion: 2
-        x: 69
-        y: 72
-        width: 103
-        height: 113
+        x: 116
+        y: 616
+        width: 182
+        height: 246
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7d4186615b9f7320800000000000000
-      internalID: 2557933887284137341
+      spriteID: 0dd2fe46aa550a6d0800000000000000
+      internalID: -2981288762993070640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S_Bulle_1
+      name: Assets - Etoile, souris, explosion_1
       rect:
         serializedVersion: 2
-        x: 342
-        y: 96
-        width: 84
-        height: 66
+        x: 709
+        y: 626
+        width: 213
+        height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f6b8a889732f36f0800000000000000
-      internalID: -702804011955734794
+      spriteID: 4f735a7b2e78f5510800000000000000
+      internalID: 1540099005397415924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S_Bulle_2
+      name: Assets - Etoile, souris, explosion_2
       rect:
         serializedVersion: 2
-        x: 618
-        y: 85
-        width: 57
-        height: 86
+        x: 144
+        y: 196
+        width: 89
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a706417e8e7913510800000000000000
-      internalID: 1527168775220387962
+      spriteID: 7b4453f0a1b07e2e0800000000000000
+      internalID: -2096694894965472073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S_Bulle_3
+      name: Assets - Etoile, souris, explosion_3
       rect:
         serializedVersion: 2
-        x: 829
-        y: 72
-        width: 103
-        height: 113
+        x: 431
+        y: 196
+        width: 82
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +193,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2004cde718de60710800000000000000
-      internalID: 1659274653167534082
+      spriteID: 830bfa7b1d4a794e0800000000000000
+      internalID: -1974928690941808584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets - Etoile, souris, explosion_4
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 138
+        width: 233
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77dfa405b2bd26d60800000000000000
+      internalID: 7882103276928957815
       vertices: []
       indices: 
       edges: []
@@ -236,10 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      S_Bulle_0: 2557933887284137341
-      S_Bulle_1: -702804011955734794
-      S_Bulle_2: 1527168775220387962
-      S_Bulle_3: 1659274653167534082
+      Assets - Etoile, souris, explosion_0: -2981288762993070640
+      Assets - Etoile, souris, explosion_1: 1540099005397415924
+      Assets - Etoile, souris, explosion_2: -2096694894965472073
+      Assets - Etoile, souris, explosion_3: -1974928690941808584
+      Assets - Etoile, souris, explosion_4: 7882103276928957815
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

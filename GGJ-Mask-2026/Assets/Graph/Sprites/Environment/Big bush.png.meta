@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 1f502d2f51d990a42861dadb95afcffe
+guid: 6c4e15fa335b0b04698c832850401699
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2557933887284137341
-    second: S_Bulle_0
+      213: -3481717574541519606
+    second: Big bush_0
   - first:
-      213: -702804011955734794
-    second: S_Bulle_1
+      213: -4095736549554923886
+    second: Big bush_1
   - first:
-      213: 1527168775220387962
-    second: S_Bulle_2
-  - first:
-      213: 1659274653167534082
-    second: S_Bulle_3
+      213: 7625507836143401228
+    second: Big bush_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,43 +102,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: S_Bulle_0
+      name: Big bush_0
       rect:
         serializedVersion: 2
-        x: 69
-        y: 72
-        width: 103
-        height: 113
+        x: 80
+        y: 581
+        width: 344
+        height: 177
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7d4186615b9f7320800000000000000
-      internalID: 2557933887284137341
+      spriteID: a05d73910547eafc0800000000000000
+      internalID: -3481717574541519606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S_Bulle_1
+      name: Big bush_1
       rect:
         serializedVersion: 2
-        x: 342
-        y: 96
-        width: 84
-        height: 66
+        x: 541
+        y: 581
+        width: 411
+        height: 207
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f6b8a889732f36f0800000000000000
-      internalID: -702804011955734794
+      spriteID: 296d13eee450927c0800000000000000
+      internalID: -4095736549554923886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S_Bulle_2
+      name: Big bush_2
       rect:
         serializedVersion: 2
-        x: 618
-        y: 85
-        width: 57
-        height: 86
+        x: 80
+        y: 40
+        width: 864
+        height: 365
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,30 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a706417e8e7913510800000000000000
-      internalID: 1527168775220387962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: S_Bulle_3
-      rect:
-        serializedVersion: 2
-        x: 829
-        y: 72
-        width: 103
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2004cde718de60710800000000000000
-      internalID: 1659274653167534082
+      spriteID: c09f84da9fe33d960800000000000000
+      internalID: 7625507836143401228
       vertices: []
       indices: 
       edges: []
@@ -236,10 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      S_Bulle_0: 2557933887284137341
-      S_Bulle_1: -702804011955734794
-      S_Bulle_2: 1527168775220387962
-      S_Bulle_3: 1659274653167534082
+      Big bush_0: -3481717574541519606
+      Big bush_1: -4095736549554923886
+      Big bush_2: 7625507836143401228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
