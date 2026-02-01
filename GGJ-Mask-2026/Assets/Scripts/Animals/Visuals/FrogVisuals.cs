@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class FrogVisuals : MonoBehaviour
+public class FrogVisuals : AnimalVisual
 {
     [Header("Scene References")]
     [SerializeField] private Transform _jumpSprite;
@@ -35,8 +35,10 @@ public class FrogVisuals : MonoBehaviour
         //_IdleSprite.transform.localScale = new Vector3(_frog._orientation, 1, 1);
     }
 
-    void Start()
+    protected override void Start()
     {
+        base.Start();
+
         UpdateSpritesOrientation();
     }
 
