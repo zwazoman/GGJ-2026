@@ -12,7 +12,8 @@ public class Bee : Animal
     bool _move = false;
     public Vector2 direction = Vector2.zero;
 
-    bool fly;
+    bool _input;
+    AudioSource _flySource;
 
     protected override void Awake()
     {
@@ -23,15 +24,16 @@ public class Bee : Animal
     protected override void Update()
     {
         base.Update();
-        fly |= Input.GetKeyDown(KeyCode.Mouse0) && isControlled;
+        _input |= Input.GetKeyDown(KeyCode.Mouse0) && isControlled;
     }
 
     private void FixedUpdate()
     {
-        if (fly && !_move)
+        if (_input && !_move)
         {
             direction = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
             _move = true;
+            _flySource = SFXManager.Instance.PlaySFXClipAtPosition(Sounds.BeeHum, transform.position);
         }
         if (_move && !_isDead)
         {
@@ -46,6 +48,10 @@ public class Bee : Animal
         _isDead = true;
         OnDie?.Invoke();
         await Awaitable.WaitForSecondsAsync(.2f);
+
+        SFXManager.Instance.PlaySFXClipAtPosition(Sounds.BeeHit, transform.position);
+        _flySource.Stop();
+
         if(isControlled) GameManager.Instance.Restart();
         else Destroy(gameObject);
     }
