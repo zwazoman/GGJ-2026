@@ -48,6 +48,7 @@ public class Mask : Pawn
         {
             if (hit.gameObject.TryGetComponent(out Pawn animal) && _lastPawn != animal)
             {
+                SFXManager.Instance.PlaySFXClipAtPosition(Sounds.MaskAttach, transform.position);
                 PossessPawn(animal);
             }
         }
@@ -58,13 +59,13 @@ public class Mask : Pawn
         if (!isControlled)
             return;
 
-        
-        
         Die();
     }
 
     void Launch(Vector2 direction)
     {
+        SFXManager.Instance.PlaySFXClipAtPosition(Sounds.MaskLaunch, transform.position);
+
         _rb.AddForce(direction.normalized * _launchStrength,ForceMode2D.Impulse);
     }
 
