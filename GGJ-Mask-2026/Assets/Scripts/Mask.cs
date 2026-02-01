@@ -48,7 +48,7 @@ public class Mask : Pawn
         {
             if (hit.gameObject.TryGetComponent(out Pawn animal) && _lastPawn != animal)
             {
-                SFXManager.Instance.PlaySFXClipAtPosition(Sounds.MaskAttach, transform.position);
+                SFXManager.Instance.PlaySFXClipAtPosition(Sounds.End, transform.position);
                 PossessPawn(animal);
             }
         }
