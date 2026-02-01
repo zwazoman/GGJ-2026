@@ -37,6 +37,8 @@ public class Frog : Animal
             * (!Input.GetKey(KeyCode.Mouse0) ? _jumpStrength : _jumpStrengthWithInput); 
         Debug.DrawRay(transform.position, Velocity, Color.red,1);
         OnJump?.Invoke();
+
+        SFXManager.Instance.PlaySFXClip(Sounds.Whoosh);
     }
 
     void FixedUpdate()
