@@ -1,6 +1,1 @@
-using UnityEngine;
-
-enum SoundEnum
-{
-
-}
+public enum Sounds{Whoosh,FrogJump,FrogLand,}

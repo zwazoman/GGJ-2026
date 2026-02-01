@@ -37,6 +37,8 @@ public class Frog : Animal
             * (!Input.GetKey(KeyCode.Mouse0) ? _jumpStrength : _jumpStrengthWithInput); 
         Debug.DrawRay(transform.position, Velocity, Color.red,1);
         OnJump?.Invoke();
+
+        SFXManager.Instance.PlaySFXClip(Sounds.FrogJump);
     }
 
     void FixedUpdate()
@@ -50,7 +52,7 @@ public class Frog : Animal
         while ( Physics2D.CircleCast(transform.position,.5f,Velocity,_contactFilter,hits,Velocity.magnitude*Time.deltaTime)>0 && collisionCount < 5 )
         {
             if (Vector2.Dot(hits[0].normal, Vector2.up) > .7f)
-                if (isControlled) {Jump();} else {Velocity = Vector2.zero; OnLand?.Invoke();}
+                if (isControlled) {Jump();} else {Velocity = Vector2.zero; OnLand?.Invoke(); SFXManager.Instance.PlaySFXClip(Sounds.FrogLand); }
             else
             {Velocity = Vector2.Reflect(Velocity, hits[0].normal)*1f; OnBounce?.Invoke();}
 

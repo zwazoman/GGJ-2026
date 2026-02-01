@@ -35,13 +35,10 @@ public class SFXManager : MonoBehaviour
     [SerializeField, Tooltip("dictionnaire contenant le nom d'un son en clefs et ses variantes en valeurs")]
     private SerializedDictionary<string, Clip> _soundsDict;
 
-    [SerializeField]
-    private Sounds _soundTester;
-
     Queue<AudioSource> _audioPool = new Queue<AudioSource>();
     List<Clip> _clips = new List<Clip>();
 
-    [SerializeField] string _soundsEnumFilePath = "Assets/Scripts/Sound/SoundEnum";
+    [SerializeField] string _soundsEnumFilePath = "Assets/Scripts/Sound/SoundEnum.cs";
 
     //AudioListener _sceneListener;
 
