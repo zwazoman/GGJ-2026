@@ -115,6 +115,8 @@ public class Spider : Animal
     {
         _grappleStartTime = Time.time;
         _state = State.ThrowingWeb;
+        SFXManager.Instance.PlaySFXClipAtPosition(Sounds.SpiderRope, transform.position);
+
     }
 
     void UpdateGrappleVisuals()
@@ -154,6 +156,8 @@ public class Spider : Animal
             Debug.DrawLine(transform.position, _grapplePoint, Color.red,1);
             _state = State.Swinging;
             OnSwingStart?.Invoke();
+
+            SFXManager.Instance.PlaySFXClipAtPosition(Sounds.SpiderRopeAttach, transform.position);
         }
     }
     

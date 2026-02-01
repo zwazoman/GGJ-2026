@@ -100,7 +100,7 @@ MonoBehaviour:
   _layerMask:
     serializedVersion: 2
     m_Bits: 192
-  _speed: 10
+  _speed: 7
 --- !u!1 &1051113388910480789
 GameObject:
   m_ObjectHideFlags: 0
