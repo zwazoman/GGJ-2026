@@ -115,10 +115,10 @@ TextureImporter:
       name: Assets - Etoile, souris, explosion_0
       rect:
         serializedVersion: 2
-        x: 116
-        y: 616
-        width: 182
-        height: 246
+        x: 36
+        y: 474
+        width: 127
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,10 +137,10 @@ TextureImporter:
       name: Assets - Etoile, souris, explosion_1
       rect:
         serializedVersion: 2
-        x: 709
-        y: 626
+        x: 183
+        y: 474
         width: 213
-        height: 226
+        height: 242
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,10 +159,10 @@ TextureImporter:
       name: Assets - Etoile, souris, explosion_2
       rect:
         serializedVersion: 2
-        x: 144
-        y: 196
-        width: 89
-        height: 135
+        x: 405
+        y: 467
+        width: 350
+        height: 276
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: Assets - Etoile, souris, explosion_3
       rect:
         serializedVersion: 2
-        x: 431
-        y: 196
-        width: 82
-        height: 108
+        x: 160
+        y: 210
+        width: 229
+        height: 249
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,10 +203,10 @@ TextureImporter:
       name: Assets - Etoile, souris, explosion_4
       rect:
         serializedVersion: 2
-        x: 689
-        y: 138
-        width: 233
-        height: 251
+        x: 492
+        y: 229
+        width: 211
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,11 +221,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Assets - Etoile, souris, explosion_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 65
+        width: 87
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00848f469dd1454eb9716bf2118a7ec
+      internalID: 1609364525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets - Etoile, souris, explosion_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 62
+        width: 80
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6222365e87c164d88455bf73d7e1de
+      internalID: -1738831293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets - Etoile, souris, explosion_7
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 97
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d134528a05842429565c9b638453d1
+      internalID: -1756934028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 340d8e6e6f19706429c8c21c083bfa30
     internalID: 0
     vertices: []
     indices: 
@@ -240,6 +306,9 @@ TextureImporter:
       Assets - Etoile, souris, explosion_2: -2096694894965472073
       Assets - Etoile, souris, explosion_3: -1974928690941808584
       Assets - Etoile, souris, explosion_4: 7882103276928957815
+      Assets - Etoile, souris, explosion_5: 1609364525
+      Assets - Etoile, souris, explosion_6: -1738831293
+      Assets - Etoile, souris, explosion_7: -1756934028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

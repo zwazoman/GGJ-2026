@@ -73,7 +73,7 @@ public class Mole : Animal
                 }
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse1) && !_moves && Vector2.Dot((Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized, -transform.right) >= 0.05)
+        if ( isControlled && Input.GetKeyDown(KeyCode.Mouse1) && !_moves && Vector2.Dot((Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized, -transform.right) >= 0.05)
         {
             PossessPawn(mask);
         }
