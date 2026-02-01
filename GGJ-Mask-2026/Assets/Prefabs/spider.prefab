@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 774434711397199532}
   - component: {fileID: 6412474129379537402}
   - component: {fileID: 7436293559666631367}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 7003558306385629745}
   - component: {fileID: 1390200008283385158}
   - component: {fileID: 5817825152153537178}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: spider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 6452256328371694562}
   - component: {fileID: 9073225488026226878}
   - component: {fileID: 7349870580149753983}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "S_Araign\xE9eFrame1_0"
   m_TagString: Untagged
   m_Icon: {fileID: 0}

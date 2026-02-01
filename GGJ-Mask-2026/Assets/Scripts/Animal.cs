@@ -32,7 +32,7 @@ public class Animal : Pawn
     {
         base.LooseControl();
 
-        coll.enabled = false;
-        Destroy(gameObject);
+        //coll.enabled = false;
+        //Destroy(gameObject);
     }
 }

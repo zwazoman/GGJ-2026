@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1214654587016792567}
   - component: {fileID: 7479355953107956305}
   - component: {fileID: 7470814376165435364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 3027742158304399661}
   - component: {fileID: 3850463587828596006}
   - component: {fileID: 759377558236450200}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: S_TaupeFrame1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6557118802149156777}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mask Socket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7557494682347175005}
   - component: {fileID: 4625700605883133291}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7695654031295614685}
   - component: {fileID: 2055745447764639492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: S_MaskTaupe_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4488435619788339162}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DETECTOR
   m_TagString: Untagged
   m_Icon: {fileID: 0}

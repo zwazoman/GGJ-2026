@@ -10,6 +10,7 @@ public class Mask : Pawn
     [Header("parameters")]
     [SerializeField] float _launchStrength;
 
+    private Pawn _lastPawn = null;
     private void Awake()
     {
         TryGetComponent(out _rb);
@@ -23,12 +24,13 @@ public class Mask : Pawn
     public override void GainControl(Pawn lastPawn)
     {
         base.GainControl(lastPawn);
-
+        
+        _lastPawn = lastPawn;
         Animal animal = lastPawn as Animal;
 
         transform.position = animal.maskSocket.position;
         gameObject.SetActive(true);
-
+        
         Launch(Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position);
     }
 
@@ -39,17 +41,26 @@ public class Mask : Pawn
         gameObject.SetActive(false);
     }
 
+    void FixedUpdate()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, .5f, LayerMask.GetMask("Animal"));
+        if (hit)
+        {
+            if (hit.gameObject.TryGetComponent(out Pawn animal) && _lastPawn != animal)
+            {
+                PossessPawn(animal);
+            }
+        }
+    }
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!isControlled)
             return;
 
-        if (collision.gameObject.TryGetComponent(out Pawn animal))
-        {
-            PossessPawn(animal);
-        }
-        else
-            Die();
+        
+        
+        Die();
     }
 
     void Launch(Vector2 direction)

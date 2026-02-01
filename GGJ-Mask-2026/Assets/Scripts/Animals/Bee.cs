@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class Bee : Animal
 {
-    public event Action OnFly, OnCollide;
+    public event Action OnFly, OnCollide,OnDie;
 
     Rigidbody2D _rb;
     [SerializeField] float _speed;
     [SerializeField] LayerMask _layerMask;
-
+    bool _isDead = false;
     bool _move = false;
     Vector2 direction = Vector2.zero;
 
@@ -33,7 +33,7 @@ public class Bee : Animal
             direction = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
             _move = true;
         }
-        if (_move)
+        if (_move && !_isDead)
         {
             transform.Translate(direction * _speed * Time.fixedDeltaTime);
             if (Physics2D.OverlapCircle(transform.position, .5f, _layerMask))
@@ -41,9 +41,13 @@ public class Bee : Animal
         }
     }
 
-    void Die()
+    async void Die()
     {
-        GameManager.Instance.Restart();
+        _isDead = true;
+        OnDie?.Invoke();
+        await Awaitable.WaitForSecondsAsync(.2f);
+        if(isControlled) GameManager.Instance.Restart();
+        else Destroy(gameObject);
     }
 
 }

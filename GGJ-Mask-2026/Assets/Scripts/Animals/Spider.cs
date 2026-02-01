@@ -54,9 +54,11 @@ public class Spider : Animal
         {
             print("collision "+hit.transform.name);
             
-            Vector2 currentRight = right;
+            //Vector2 currentRight = right;
             transform.rotation = Quaternion.AngleAxis(Mathf.Rad2Deg * Mathf.Atan2(hit.normal.y, hit.normal.x)-90, Vector3.forward);
-            orientation = Mathf.Sign(Vector2.Dot(currentRight, right)/*-.01f*/);
+            
+            Vector2 toMouse = Camera.main.ScreenToWorldPoint(Input.mousePosition)-transform.position;
+            orientation = Mathf.Sign(Vector2.Dot(toMouse, right)/*-.01f*/);
             transform.position = hit.point + hit.normal*.5f;
             _state = State.Walking;
             _lineRenderer.enabled = false;
@@ -71,6 +73,8 @@ public class Spider : Animal
     
     void WalkAlongWalls()
     {
+        _lineRenderer.enabled = false;
+        
         RaycastHit2D hit;
             
         //state change

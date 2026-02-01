@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1801572578280276639}
   - component: {fileID: 4362106832040829191}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mask_Abeille_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1391038201961676902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 9116881438529481563}
   - component: {fileID: 5079249346346190696}
   - component: {fileID: 5013924364428283519}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: S_AbeilleAileframe1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3335578484252150019}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MaskSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 3735486217069103880}
   - component: {fileID: 3679908299016759736}
   - component: {fileID: 2757067120605047206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bee
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2424597838037482948}
   - component: {fileID: 3437881382534595175}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1599285701258920196}
   - component: {fileID: 8879211580740469967}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: S_GrenouilleFrame2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6191283452310194545}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9094323982216521292}
   - component: {fileID: 782721089393897793}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: S_GrenouilleFrame1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 5304870732477569275}
   - component: {fileID: 6568629204722074328}
   - component: {fileID: 1507439421252777100}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Frog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
