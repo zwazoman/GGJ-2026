@@ -35,7 +35,7 @@ public class Mole : Animal
             {
                 OnDig?.Invoke();
 
-                _digSource = SFXManager.Instance.PlaySFXClip(Sounds.MoleDig);
+                _digSource = SFXManager.Instance.PlaySFXClipAtPosition(Sounds.MoleDig, transform.position);
 
                 Vector2 direction = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
                 transform.rotation = Quaternion.AngleAxis(Mathf.Rad2Deg * Mathf.Atan2(direction.y, direction.x) + 180, transform.forward);
@@ -56,7 +56,7 @@ public class Mole : Animal
                 transform.rotation = Quaternion.AngleAxis(Mathf.Rad2Deg * Mathf.Atan2(hit.normal.y, hit.normal.x) + 180, transform.forward);
                 _moves = false;
 
-                SFXManager.Instance.PlaySFXClip(Sounds.MoleSpeak);
+                SFXManager.Instance.PlaySFXClipAtPosition(Sounds.MoleSpeak, transform.position);
 
                 _digSource.Stop();
 

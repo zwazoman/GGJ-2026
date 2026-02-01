@@ -60,6 +60,28 @@ MonoBehaviour:
         MixerGroup: {fileID: 0}
         tempClipList: []
         tempClip: {fileID: 0}
+    - Key: BeeHum
+      Value:
+        ClipList:
+        - {fileID: 8300000, guid: 55db6cf30d0aaad45b01e40b9f485fad, type: 3}
+        Volume: 1
+        Pitch: 1
+        RandomType: 1
+        MixerGroup: {fileID: 0}
+        tempClipList: []
+        tempClip: {fileID: 0}
+    - Key: BeeHit
+      Value:
+        ClipList:
+        - {fileID: 8300000, guid: c14783b42a4c7214ebf9218553a5270c, type: 3}
+        - {fileID: 8300000, guid: 612a265a4c3405a46826da7117e311f5, type: 3}
+        - {fileID: 8300000, guid: b9f437003c5f11342a8bffd05079ccde, type: 3}
+        Volume: 1
+        Pitch: 1
+        RandomType: 1
+        MixerGroup: {fileID: 0}
+        tempClipList: []
+        tempClip: {fileID: 0}
     - Key: MoleSpeak
       Value:
         ClipList:
