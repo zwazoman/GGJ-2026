@@ -37,6 +37,8 @@ public class Spider : Animal
 
     private Vector3 right => orientation * transform.right;
 
+    float _walkSoundTimer;
+
     protected override void Update()
     {
         base.Update();
@@ -74,7 +76,14 @@ public class Spider : Animal
     void WalkAlongWalls()
     {
         _lineRenderer.enabled = false;
-        
+
+        _walkSoundTimer += Time.fixedDeltaTime;
+        if(_walkSoundTimer >= .3f)
+        {
+            SFXManager.Instance.PlaySFXClipAtPosition(Sounds.SpiderWalk, transform.position);
+            _walkSoundTimer = 0;
+        }
+
         RaycastHit2D hit;
             
         //state change

@@ -67,7 +67,7 @@ public class Frog : Animal
                         OnLand?.Invoke();
                         _hasLanded = true;
                     }
-                    SFXManager.Instance.PlaySFXClip(Sounds.FrogLand);
+                    //SFXManager.Instance.PlaySFXClip(Sounds.FrogLand);
                 }
             else
             {Velocity = Vector2.Reflect(Velocity, hits[0].normal)*1f; OnBounce?.Invoke();}
