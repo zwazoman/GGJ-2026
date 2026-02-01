@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class BoxColliderGenerator : MonoBehaviour
 {
+    void Awake()
+    {
+        generateBoxes();
+    }
     public void generateBoxes()
     {
         foreach (Transform child in transform)
