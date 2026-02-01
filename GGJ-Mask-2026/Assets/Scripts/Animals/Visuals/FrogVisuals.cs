@@ -8,7 +8,6 @@ public class FrogVisuals : MonoBehaviour
     [SerializeField] private Transform _IdleSprite;
     [SerializeField] private Transform _VisualsRoot;
     [SerializeField] private Frog _frog;
-
     private bool isJumping = false;
     private void Awake()
     {
