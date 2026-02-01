@@ -43,7 +43,7 @@ public class Fish : Animal
 
             SFXManager.Instance.PlaySFXClipAtPosition(Sounds.FrogLand, transform.position);
 
-            _rb.AddForce(transform.up * _jumpStrength, ForceMode2D.Impulse);
+            _rb.AddForce(Vector2.up * _jumpStrength, ForceMode2D.Impulse);
             _rb.AddTorque(_torqueStrength, ForceMode2D.Impulse);
             _input = false;
         }

@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 770ab9976c1a4b94d846bc0eb6caba62
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6190614228489422708
+    second: CAILLOU_0
+  - first:
+      213: -5397534017273772904
+    second: CAILLOU_1
+  - first:
+      213: 2077430903294442043
+    second: CAILLOU_2
+  - first:
+      213: -7525455382683198389
+    second: CAILLOU_3
+  - first:
+      213: 5316796016169814910
+    second: CAILLOU_4
+  - first:
+      213: -628575996024109661
+    second: CAILLOU_5
+  - first:
+      213: 5623937396423870899
+    second: CAILLOU_6
+  - first:
+      213: 1066434030816642282
+    second: CAILLOU_7
+  - first:
+      213: -5597647346996165940
+    second: CAILLOU_8
+  - first:
+      213: -216691183576789298
+    second: CAILLOU_9
+  - first:
+      213: 3771917694076235975
+    second: CAILLOU_10
+  - first:
+      213: -5310158936935852574
+    second: CAILLOU_11
+  - first:
+      213: -5324106563212679945
+    second: CAILLOU_12
+  - first:
+      213: -2643018253071293169
+    second: CAILLOU_13
+  - first:
+      213: 4101720359864945727
+    second: CAILLOU_14
+  - first:
+      213: -7080671703574240295
+    second: CAILLOU_15
+  - first:
+      213: -304555389050838312
+    second: CAILLOU_16
+  - first:
+      213: -6811108666342960086
+    second: CAILLOU_17
+  - first:
+      213: 3489450236490661022
+    second: CAILLOU_18
+  - first:
+      213: -3715810836960733903
+    second: CAILLOU_19
+  - first:
+      213: 5041923259402704029
+    second: CAILLOU_20
+  - first:
+      213: -757633590391284830
+    second: CAILLOU_21
+  - first:
+      213: -5849453480803355084
+    second: CAILLOU_22
+  - first:
+      213: -5374542416654191220
+    second: CAILLOU_23
+  - first:
+      213: 3695643999004537543
+    second: CAILLOU_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CAILLOU_0
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 690
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477479e67da79e550800000000000000
+      internalID: 6190614228489422708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_1
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 697
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8944f4d986b1815b0800000000000000
+      internalID: -5397534017273772904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_2
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 616
+        width: 159
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ab84c566484dc10800000000000000
+      internalID: 2077430903294442043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 662
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4cdd167336309790800000000000000
+      internalID: -7525455382683198389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_4
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 575
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b830f9ecd09c940800000000000000
+      internalID: 5316796016169814910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_5
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 545
+        width: 99
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a545a24679d647f0800000000000000
+      internalID: -628575996024109661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_6
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 491
+        width: 69
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b941e0e34d3c0e40800000000000000
+      internalID: 5623937396423870899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_7
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 535
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae4c63fc91cbcce00800000000000000
+      internalID: 1066434030816642282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_8
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 476
+        width: 91
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2c26045692152b0800000000000000
+      internalID: -5597647346996165940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_9
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 552
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece42f044882efcf0800000000000000
+      internalID: -216691183576789298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_10
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 530
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0bc65882b885430800000000000000
+      internalID: 3771917694076235975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_11
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 498
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5921fc4968e46b0800000000000000
+      internalID: -5310158936935852574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_12
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 445
+        width: 68
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4e1610a49fc16b0800000000000000
+      internalID: -5324106563212679945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_13
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 477
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05efc2f6ec125bd0800000000000000
+      internalID: -2643018253071293169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_14
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 458
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3cccb97fec3ce830800000000000000
+      internalID: 4101720359864945727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_15
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 408
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d32c41c9966cbd90800000000000000
+      internalID: -7080671703574240295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_16
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 357
+        width: 105
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2a13dbc7006cbf0800000000000000
+      internalID: -304555389050838312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_17
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 435
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a241b0831c41a71a0800000000000000
+      internalID: -6811108666342960086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_18
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 366
+        width: 66
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9cbd6f80840d6030800000000000000
+      internalID: 3489450236490661022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_19
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 412
+        width: 28
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13598622bb9ce6cc0800000000000000
+      internalID: -3715810836960733903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_20
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 409
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d945a7dbd7288f540800000000000000
+      internalID: 5041923259402704029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_21
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 397
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2abd2de73485c75f0800000000000000
+      internalID: -757633590391284830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 269
+        width: 194
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4363b8a0d0192dea0800000000000000
+      internalID: -5849453480803355084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_23
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 287
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85be09c52ac965b0800000000000000
+      internalID: -5374542416654191220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAILLOU_24
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 281
+        width: 127
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c238f003a0994330800000000000000
+      internalID: 3695643999004537543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CAILLOU_0: 6190614228489422708
+      CAILLOU_1: -5397534017273772904
+      CAILLOU_10: 3771917694076235975
+      CAILLOU_11: -5310158936935852574
+      CAILLOU_12: -5324106563212679945
+      CAILLOU_13: -2643018253071293169
+      CAILLOU_14: 4101720359864945727
+      CAILLOU_15: -7080671703574240295
+      CAILLOU_16: -304555389050838312
+      CAILLOU_17: -6811108666342960086
+      CAILLOU_18: 3489450236490661022
+      CAILLOU_19: -3715810836960733903
+      CAILLOU_2: 2077430903294442043
+      CAILLOU_20: 5041923259402704029
+      CAILLOU_21: -757633590391284830
+      CAILLOU_22: -5849453480803355084
+      CAILLOU_23: -5374542416654191220
+      CAILLOU_24: 3695643999004537543
+      CAILLOU_3: -7525455382683198389
+      CAILLOU_4: 5316796016169814910
+      CAILLOU_5: -628575996024109661
+      CAILLOU_6: 5623937396423870899
+      CAILLOU_7: 1066434030816642282
+      CAILLOU_8: -5597647346996165940
+      CAILLOU_9: -216691183576789298
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
