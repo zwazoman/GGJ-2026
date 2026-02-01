@@ -6,7 +6,8 @@ public class GameManager : MonoBehaviour
 {
     #region Singleton
     private static GameManager instance;
-
+    
+    bool isLoadingNewScene = false;
     public static GameManager Instance
     {
         get
@@ -20,6 +21,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public async void LoadScene(int scene)
+    {
+        isLoadingNewScene = false;
+        AsyncOperation op = SceneManager.LoadSceneAsync(scene);
+        //todo : animation
+        while (!op.isDone)
+            await Awaitable.NextFrameAsync();
+        isLoadingNewScene = true;
+        op.allowSceneActivation = true;
+    }
+    
     private void Awake()
     {
         if (instance == null || instance == this)
@@ -48,6 +60,6 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
