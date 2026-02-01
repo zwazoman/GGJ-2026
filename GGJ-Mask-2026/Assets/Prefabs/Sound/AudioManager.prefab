@@ -48,30 +48,55 @@ MonoBehaviour:
   _SFXObject: {fileID: 3662379104358310079, guid: a49ccc0080c0b7f4c995cd988b908270, type: 3}
   _soundsDict:
     _serializedList:
-    - Key: Whoosh
+    - Key: MoleDig
       Value:
         ClipList:
         - {fileID: 8300000, guid: 5449d0a57452426469a59c9f6e89e17a, type: 3}
         - {fileID: 8300000, guid: a02ac183a0467cf42905c3f386eed5f9, type: 3}
         - {fileID: 8300000, guid: 84e8f632150905d41bb6458c4675a3e3, type: 3}
+        - {fileID: 8300000, guid: 09d117675ecca7f458e94a328752e732, type: 3}
+        - {fileID: 8300000, guid: 3e199f7ff9b748a4393b24a3f283fa17, type: 3}
+        - {fileID: 8300000, guid: c9780c16a523a574ca1ddfbdb0e3411b, type: 3}
         Volume: 1
         Pitch: 1
         RandomType: 1
         MixerGroup: {fileID: 0}
         tempClipList: []
         tempClip: {fileID: 0}
-    - Key: Frog
+    - Key: MoleSpeak
       Value:
         ClipList:
-        - {fileID: 8300000, guid: 1aa4024c9e11e0d4ca27eb039956bf0e, type: 3}
-        - {fileID: 8300000, guid: de35a8b6dda8e3e42b7e7f1d3278edcc, type: 3}
-        - {fileID: 8300000, guid: acd4aafb6df479046b09a50613248eaf, type: 3}
-        - {fileID: 8300000, guid: 26f51e3552aed2b4ca8c1b9cd008d732, type: 3}
-        - {fileID: 8300000, guid: 55bdaa91b1834d1408ca57938195f834, type: 3}
+        - {fileID: 8300000, guid: 8b64bdcad11c81d47bc8edb8f525c3bf, type: 3}
+        - {fileID: 8300000, guid: 900b4c88953c4004882ce84ba186f78e, type: 3}
+        - {fileID: 8300000, guid: 6ff64888b6237f745b9b6bc17689a290, type: 3}
         Volume: 1
         Pitch: 1
         RandomType: 1
         MixerGroup: {fileID: 0}
         tempClipList: []
         tempClip: {fileID: 0}
-  _soundTester: 0
+    - Key: FrogJump
+      Value:
+        ClipList:
+        - {fileID: 8300000, guid: 25dc22668cb22b749b45f25fdbb21b30, type: 3}
+        - {fileID: 8300000, guid: ac872f1bb576fd34bac365aebd5c930e, type: 3}
+        - {fileID: 8300000, guid: b0c35212fe6f7834cb1bee4bfc853b45, type: 3}
+        Volume: 1
+        Pitch: 1
+        RandomType: 1
+        MixerGroup: {fileID: 0}
+        tempClipList: []
+        tempClip: {fileID: 0}
+    - Key: FrogLand
+      Value:
+        ClipList:
+        - {fileID: 8300000, guid: 3ccdd735f06b4d1439294037d0ac39bf, type: 3}
+        - {fileID: 8300000, guid: 2c6d714c1d1d537409b67a79f26bad33, type: 3}
+        - {fileID: 8300000, guid: 35d533d9d1b4ef94a9a944ca4ac1840c, type: 3}
+        Volume: 1
+        Pitch: 1
+        RandomType: 1
+        MixerGroup: {fileID: 0}
+        tempClipList: []
+        tempClip: {fileID: 0}
+  _soundsEnumFilePath: Assets/Scripts/Sound/SoundEnum.cs

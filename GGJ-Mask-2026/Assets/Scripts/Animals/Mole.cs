@@ -14,6 +14,8 @@ public class Mole : Animal
     bool _moves = false;
     bool _input;
 
+    AudioSource _digSource;
+
     protected override void Update()
     {
         base.Update();
@@ -32,6 +34,8 @@ public class Mole : Animal
             if (dot <= -0.05)
             {
                 OnDig?.Invoke();
+
+                _digSource = SFXManager.Instance.PlaySFXClip(Sounds.MoleDig);
 
                 Vector2 direction = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
                 transform.rotation = Quaternion.AngleAxis(Mathf.Rad2Deg * Mathf.Atan2(direction.y, direction.x) + 180, transform.forward);
@@ -52,6 +56,12 @@ public class Mole : Animal
             RaycastHit2D hit = Physics2D.Raycast(_collCenter.position, transform.right, 1, _layerMask);
             transform.rotation = Quaternion.AngleAxis(Mathf.Rad2Deg * Mathf.Atan2(hit.normal.y, hit.normal.x) + 180, transform.forward);
             _moves = false;
+
+            SFXManager.Instance.PlaySFXClip(Sounds.MoleSpeak);
+
+            _digSource.Stop();
+            Destroy(_digSource);
+
             OnReach?.Invoke();
             _input = false;
         }
