@@ -18,9 +18,14 @@ public class Mole : Animal
 
     protected override void Update()
     {
-        base.Update();
+        //base.Update();
 
         _input |= Input.GetKeyDown(KeyCode.Mouse0) && isControlled;
+
+        if (isControlled && Input.GetKeyDown(KeyCode.Mouse1) && !_moves && Vector2.Dot((Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized, -transform.right) >= 0.1)
+        {
+            PossessPawn(mask);
+        }
     }
 
     private void FixedUpdate()
@@ -71,11 +76,6 @@ public class Mole : Animal
                         Die();
                     }
                 }
-        }
-
-        if ( isControlled && Input.GetKeyDown(KeyCode.Mouse1) && !_moves && Vector2.Dot((Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized, -transform.right) >= 0.05)
-        {
-            PossessPawn(mask);
         }
     }
 
