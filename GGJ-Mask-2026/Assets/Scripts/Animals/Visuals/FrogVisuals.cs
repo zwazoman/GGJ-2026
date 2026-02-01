@@ -32,7 +32,7 @@ public class FrogVisuals : MonoBehaviour
     public void UpdateSpritesOrientation()
     {
         _jumpSprite.transform.localScale = new Vector3(1, _frog._orientation, 1);
-        _IdleSprite.transform.localScale = new Vector3(_frog._orientation, 1, 1);
+        //_IdleSprite.transform.localScale = new Vector3(_frog._orientation, 1, 1);
     }
 
     void Start()
