@@ -10,7 +10,7 @@ public class Bee : Animal
     [SerializeField] LayerMask _layerMask;
     bool _isDead = false;
     bool _move = false;
-    Vector2 direction = Vector2.zero;
+    public Vector2 direction = Vector2.zero;
 
     bool fly;
 

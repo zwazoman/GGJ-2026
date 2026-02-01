@@ -21,6 +21,7 @@ public class BeeVisuals : AnimalVisual
 
     void Fly()
     {
-        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y, transform.rotation.z + flightRotation));
+        transform.GetChild(0).rotation = Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y, transform.rotation.z + flightRotation));
+        transform.localScale = new Vector3(Mathf.Sign(_bee.direction.x), transform.localScale.y, transform.localScale.z);
     }
 }

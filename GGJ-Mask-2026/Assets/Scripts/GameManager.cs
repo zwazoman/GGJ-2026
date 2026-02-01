@@ -38,6 +38,8 @@ public class GameManager : MonoBehaviour
             instance = this;
         else
             Destroy(this);
+        
+        Camera.main.transform.parent.position = _firstPawn.transform.position;
     }
     #endregion
 
