@@ -96,6 +96,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1391038201961676902}
+  - component: {fileID: 3452556736950526365}
   m_Layer: 8
   m_Name: Visuals
   m_TagString: Untagged
@@ -119,6 +120,21 @@ Transform:
   - {fileID: 9116881438529481563}
   m_Father: {fileID: 3735486217069103880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3452556736950526365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5573644279974985270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f33fbcedbff5b84198c2968c710fd8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maskVisual: {fileID: 0}
+  _animal: {fileID: 2757067120605047206}
+  flightRotation: 10
 --- !u!1 &7623394110213871052
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,3 +366,4 @@ MonoBehaviour:
   _layerMask:
     serializedVersion: 2
     m_Bits: 192
+  direction: {x: 0, y: 0}

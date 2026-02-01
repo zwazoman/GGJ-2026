@@ -59,7 +59,7 @@ public class Frog : Animal
                 else
                 {
                     Velocity = Vector2.zero;
-                    if (!_hasLanded)
+                    if (!_hasLanded) 
                     {
                         OnLand?.Invoke();
                         _hasLanded = true;
