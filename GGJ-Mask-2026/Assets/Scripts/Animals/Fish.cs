@@ -40,6 +40,9 @@ public class Fish : Animal
         if (_input && _isGrounded)
         {
             print("frétille");
+
+            SFXManager.Instance.PlaySFXClipAtPosition(Sounds.FrogLand, transform.position);
+
             _rb.AddForce(transform.up * _jumpStrength, ForceMode2D.Impulse);
             _rb.AddTorque(_torqueStrength, ForceMode2D.Impulse);
             _input = false;

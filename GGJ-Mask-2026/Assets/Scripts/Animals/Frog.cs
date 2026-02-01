@@ -41,7 +41,7 @@ public class Frog : Animal
         Debug.DrawRay(transform.position, Velocity, Color.red,1);
         OnJump?.Invoke();
         _hasLanded = false;
-        SFXManager.Instance.PlaySFXClip(Sounds.FrogJump);
+        SFXManager.Instance.PlaySFXClipAtPosition(Sounds.FrogJump, transform.position);
     }
 
     void FixedUpdate()
@@ -62,9 +62,9 @@ public class Frog : Animal
                     if (!_hasLanded) 
                     {
                         OnLand?.Invoke();
+                        SFXManager.Instance.PlaySFXClipAtPosition(Sounds.FrogLand, transform.position);
                         _hasLanded = true;
                     }
-                    SFXManager.Instance.PlaySFXClip(Sounds.FrogLand);
                 }
             else
             {Velocity = Vector2.Reflect(Velocity, hits[0].normal)*1f; OnBounce?.Invoke();}

@@ -1,1 +1,1 @@
-public enum Sounds{MoleDig,MoleSpeak,FrogJump,FrogLand,}
+public enum Sounds{MoleDig,BeeHum,BeeHit,MoleSpeak,FrogJump,FrogLand,}
