@@ -2,7 +2,7 @@
 
 namespace Animals.Visuals
 {
-    public class SpiderVisuals : MonoBehaviour
+    public class SpiderVisuals : AnimalVisual
     {
         [SerializeField] Spider _spider;
         [SerializeField] Transform _WalkingSprite;

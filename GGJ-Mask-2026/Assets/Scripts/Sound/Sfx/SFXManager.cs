@@ -44,10 +44,7 @@ public class SFXManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance != null)
-            Destroy(gameObject);
         instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
