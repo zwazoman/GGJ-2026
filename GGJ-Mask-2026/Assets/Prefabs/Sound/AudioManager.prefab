@@ -51,13 +51,10 @@ MonoBehaviour:
     - Key: MoleDig
       Value:
         ClipList:
-        - {fileID: 8300000, guid: 5449d0a57452426469a59c9f6e89e17a, type: 3}
-        - {fileID: 8300000, guid: a02ac183a0467cf42905c3f386eed5f9, type: 3}
-        - {fileID: 8300000, guid: 84e8f632150905d41bb6458c4675a3e3, type: 3}
         - {fileID: 8300000, guid: 09d117675ecca7f458e94a328752e732, type: 3}
         - {fileID: 8300000, guid: 3e199f7ff9b748a4393b24a3f283fa17, type: 3}
         - {fileID: 8300000, guid: c9780c16a523a574ca1ddfbdb0e3411b, type: 3}
-        Volume: 1
+        Volume: 0.74
         Pitch: 1
         RandomType: 1
         MixerGroup: {fileID: 0}
@@ -69,7 +66,7 @@ MonoBehaviour:
         - {fileID: 8300000, guid: 8b64bdcad11c81d47bc8edb8f525c3bf, type: 3}
         - {fileID: 8300000, guid: 900b4c88953c4004882ce84ba186f78e, type: 3}
         - {fileID: 8300000, guid: 6ff64888b6237f745b9b6bc17689a290, type: 3}
-        Volume: 1
+        Volume: 0.72
         Pitch: 1
         RandomType: 1
         MixerGroup: {fileID: 0}
@@ -81,8 +78,8 @@ MonoBehaviour:
         - {fileID: 8300000, guid: 25dc22668cb22b749b45f25fdbb21b30, type: 3}
         - {fileID: 8300000, guid: ac872f1bb576fd34bac365aebd5c930e, type: 3}
         - {fileID: 8300000, guid: b0c35212fe6f7834cb1bee4bfc853b45, type: 3}
-        Volume: 1
-        Pitch: 1
+        Volume: 0.72
+        Pitch: 0.8
         RandomType: 1
         MixerGroup: {fileID: 0}
         tempClipList: []
