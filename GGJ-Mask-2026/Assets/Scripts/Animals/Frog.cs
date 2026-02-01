@@ -41,9 +41,12 @@ public class Frog : Animal
         Debug.DrawRay(transform.position, Velocity, Color.red,1);
         OnJump?.Invoke();
         _hasLanded = false;
-        SFXManager.Instance.PlaySFXClipAtPosition(Sounds.FrogJump, transform.position);
+        SFXManager.Instance.PlaySFXClip(Sounds.FrogJump);
     }
-
+    private void OnValidate()
+    {
+        transform.GetChild(0).GetComponent<FrogVisuals>().UpdateSpritesOrientation();
+    }
     void FixedUpdate()
     {
         //gravity
@@ -62,14 +65,14 @@ public class Frog : Animal
                 if (!_hasLanded) 
                     {
                         OnLand?.Invoke();
-                        SFXManager.Instance.PlaySFXClipAtPosition(Sounds.FrogLand, transform.position);
                         _hasLanded = true;
                     }
+                    SFXManager.Instance.PlaySFXClip(Sounds.FrogLand);
                 }
             else
             {Velocity = Vector2.Reflect(Velocity, hits[0].normal)*1f; OnBounce?.Invoke();}
 
-            _orientation = Velocity.x > 0 ? 1 : -1;
+            if(Velocity.x!=0) _orientation = Velocity.x > 0 ? 1 : -1;
             collisionCount ++;
         }
         
