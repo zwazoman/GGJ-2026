@@ -13,7 +13,7 @@ public class Frog : Animal
     [SerializeField] private float _jumpStrengthWithInput;
     [SerializeField] private float _gravity;
 
-    [SerializeField] private int _orientation = 1;
+    [SerializeField] public int _orientation = 1;
     bool _hasLanded = false;
     
     public event Action OnJump, OnLand, OnBounce;
@@ -59,7 +59,7 @@ public class Frog : Animal
                 else
                 {
                     Velocity = Vector2.zero;
-                    if (!_hasLanded) 
+                if (!_hasLanded) 
                     {
                         OnLand?.Invoke();
                         _hasLanded = true;

@@ -11,7 +11,7 @@ public class GameEnd : MonoBehaviour
     }
     void FixedUpdate()
     {
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, LayerMask.GetMask("Animal"));
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, radius);
         if (hit)
         {
             if (hit.gameObject.TryGetComponent(out Pawn animal) )

@@ -15,14 +15,11 @@ public class FrogVisuals : MonoBehaviour
         {
             isJumping = true;
             _jumpSprite.gameObject.SetActive(true);
-            _jumpSprite.transform.localScale = new Vector3(1, Mathf.Sign(_frog.Velocity.x), 1);
+            UpdateSpritesOrientation();
             _IdleSprite.gameObject.SetActive(false);
         };
-        
-        _frog.OnBounce += () =>
-        {
-            _jumpSprite.transform.localScale = new Vector3(1, Mathf.Sign(_frog.Velocity.x), 1);
-        };
+
+        _frog.OnBounce += UpdateSpritesOrientation;
         
         _frog.OnLand += () =>
         {
@@ -30,6 +27,17 @@ public class FrogVisuals : MonoBehaviour
             _jumpSprite.gameObject.SetActive(false);
             isJumping = false;
         };
+    }
+
+    public void UpdateSpritesOrientation()
+    {
+        _jumpSprite.transform.localScale = new Vector3(1, _frog._orientation, 1);
+        _IdleSprite.transform.localScale = new Vector3(_frog._orientation, 1, 1);
+    }
+
+    void Start()
+    {
+        UpdateSpritesOrientation();
     }
 
     void Update()

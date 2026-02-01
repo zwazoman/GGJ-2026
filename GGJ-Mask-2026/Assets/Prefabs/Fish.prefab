@@ -132,8 +132,8 @@ MonoBehaviour:
   _layerMask:
     serializedVersion: 2
     m_Bits: 192
-  _jumpStrength: 3
-  _torqueStrength: 1
+  _jumpStrength: 1.5
+  _torqueStrength: 0.5
   _groundedHeight: 0.6
 --- !u!50 &5491383600038111930
 Rigidbody2D:
